@@ -1,7 +1,8 @@
 Angularjs::Application.routes.draw do
   resources :entries
 
-  get "raffle/index"
+  root to: "raffle#index"
+    get "raffle/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
